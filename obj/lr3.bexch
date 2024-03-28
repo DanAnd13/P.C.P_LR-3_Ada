@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__lr3.o
+[PROJECT FILES]
+E:\Flash\P.C.P\LR3\LR3_Ada\lr3.gpr
+20240325110904 fb7b2435f98db2fd5e2ee37bf2cb5e7c
+[BOUND OBJECT FILES]
+E:\Flash\P.C.P\LR3\LR3_Ada\obj\lr3.o
+[GENERATED SOURCE FILES]
+b__lr3.ads
+b__lr3.adb
+b__lr3.ali
+[RESULTING OPTIONS]
+-LE:\Flash\P.C.P\LR3\LR3_Ada\obj\
+-LE:\Flash\P.C.P\LR3\LR3_Ada\obj\
+-LD:/programs/ada/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/programs/ada/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+D:/programs/ada/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
