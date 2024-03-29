@@ -8,9 +8,11 @@ procedure Lr3 is
    package String_Lists is new Indefinite_Doubly_Linked_Lists (String);
    use String_Lists;
    Storage_Size : Integer := 3;
-   Item_Numbers : Integer := 6;
-   consumers : Integer := 2;
+  Item_Numbers : Integer := 6;
+   consumers : Integer := 3;
    producers : Integer := 2;
+   items_consumer : array (1..consumers) of Integer := (4, 4, 1);
+   items_producer : array (1..producers) of Integer := (6, 3);
 
    procedure Manager (Storage_Size : in Integer; Item_Numbers : in Integer) is
       Storage : List;
@@ -84,11 +86,11 @@ procedure Lr3 is
    begin
         for i in 1..consumers loop
          --Consumer.Start (i, Item_Numbers);
-         c(i).Start(i, Item_Numbers);
+         c(i).Start(i, items_consumer(i));
         end loop;
         for i in 1..producers loop
          --Producer.Start (i, Item_Numbers);
-         p(i).Start(i, Item_Numbers);
+         p(i).Start(i, items_producer(i));
         end loop;
    end Manager;
 begin
